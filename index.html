@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style.css" />
+
+      <title>BT tuần 2</title>
+   </head>
+   <body>
+      <div id="root">
+         <section class="p-sticky top-0 d-flex f-direction-col w-240 h-full-vh primary-border-right bg-light p-20">
+            <img src="./assets/icons/logo.svg" alt="logo" />
+
+            <div class="mt-30">
+               <ul>
+                  <li>
+                     <a href="#" class="menu-item d-flex align-center menu-item-padding fz-16 b-radius-8">
+                        <img class="menu-item-img" src="./assets/icons/trade-icon.svg" alt="" />
+                        Trade
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="menu-item d-flex align-center menu-item-padding fz-16 b-radius-8 fw-600 active">
+                        <img class="menu-item-img" src="./assets/icons/orders-icon.svg" alt="" />
+                        Orders
+                     </a>
+                     <ul>
+                        <li>
+                           <a href="#" class="menu-item children d-flex align-center menu-item-padding fz-16 b-radius-8"> All </a>
+                        </li>
+                        <li>
+                           <a href="#" class="menu-item children d-flex align-center menu-item-padding fz-16 b-radius-8"> Open </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#" class="menu-item d-flex align-center menu-item-padding fz-16 b-radius-8">
+                        <img class="menu-item-img" src="./assets/icons/history-icon.svg" alt="" />
+                        History
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" class="menu-item d-flex align-center menu-item-padding fz-16 b-radius-8">
+                        <img class="menu-item-img" src="./assets/icons/settings-icon.svg" alt="" />
+                        Settings
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="mt-auto">
+               <div class="d-flex align-center">
+                  <div class="d-flex justify-center align-center icon-size-30 coin-img-bg b-radius-50-pc">
+                     <img class="icon-size-16" src="./assets/icons/fox-icon.svg" alt="" />
+                  </div>
+                  <div class="ml-10">
+                     <span class="d-block fz-16 fw-600">0.000244 ETH</span>
+                     <span class="d-block fz-10 fw-400 mt-4">0xGD63...6DS9</span>
+                  </div>
+               </div>
+
+               <div class="btn-container">
+                  <button class="btn-item outline btn-padding fz-14 fw-500 b-radius-6">Deposit</button>
+                  <button class="btn-item fill btn-padding fz-14 fw-500 b-radius-6">Withdraw</button>
+               </div>
+
+               <div class="d-flex justify-space-between">
+                  <div class="d-flex align-center c-pointer">
+                     <img src="./assets/icons/collapse-icon.svg" alt="" />
+                     <p class="fz-14 fw-500 cl-secondary ml-14">Collapse</p>
+                  </div>
+                  <img class="c-pointer" src="./assets/icons/logout-icon.svg" alt="" />
+               </div>
+            </div>
+         </section>
+
+         <section class="flex-1 d-flex f-direction-col h-full-vh p-20 bg-light">
+            <div>
+               <ul class="d-flex">
+                  <li><a href="#" class="menu-item p-8-12 d-flex align-center fz-16 b-radius-8 active">All</a></li>
+                  <li><a href="#" class="menu-item p-8-12 ml-12 d-flex align-center fz-16 b-radius-8">Open</a></li>
+               </ul>
+            </div>
+
+            <div class="d-flex f-direction-col o-y-auto">
+               <div class="table-wrapper mt-12 primary-border b-radius-8 o-y-auto">
+                  <table class="w-full b-collapse bg-septenary">
+                     <thead class="primary-border-bottom">
+                        <tr>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Date</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Market</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Side</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Price</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Amount</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Value</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Filled</th>
+                           <th class="cl-secondary p-12-24 fz-12 fw-600 text-uppercase text-left">Status</th>
+                           <th><button class="cl-tertiary p-12-24 fz-12 fw-600 text-uppercase text-left">Cancel all</button></th>
+                        </tr>
+                     </thead>
+
+                     <tbody class="table-color">
+                        <div class="tbody"></div>
+                     </tbody>
+                  </table>
+               </div>
+
+               <div class="d-flex justify-space-between align-center p-12-24">
+                  <span class="d-block fz-14 fw-500 cl-secondary">Showing 1 to 10 of 97 results</span>
+                  <div>
+                     <ul class="d-flex">
+                        <li class="pagination-item p-9 d-flex justify-center align-center fz-14 fw-500 cl-senary">
+                           <img src="./assets/icons/chevron-left-icon.svg" alt="" />
+                        </li>
+                        <li class="active pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">1</li>
+                        <li class="pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">2</li>
+                        <li class="pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">3</li>
+                        <li class="none pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">...</li>
+                        <li class="pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">5</li>
+                        <li class="pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">6</li>
+                        <li class="pagination-item p-9-17 d-flex justify-center align-center fz-14 fw-500 cl-senary">7</li>
+                        <li class="pagination-item p-9 d-flex justify-center align-center fz-14 fw-500 cl-senary">
+                           <img src="./assets/icons/chevron-right-icon.svg" alt="" />
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </body>
+
+   <script src="./main.js"></script>
+</html>
