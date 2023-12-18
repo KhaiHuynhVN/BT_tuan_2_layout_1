@@ -316,8 +316,16 @@ button {
   margin-top: 12px;
 }
 
+.cur-pointer {
+  cursor: pointer;
+}
+
 .primary-border {
   border: 2px solid var(--devider);
+}
+
+.secondary-border {
+  border: 1px solid var(--devider);
 }
 
 .w-full {
@@ -368,11 +376,14 @@ button {
   display: inline-block;
 }
 
+.lh-20 {
+  line-height: 20px;
+}
+
 .ml-6 {
   margin-left: 6px;
 }
 
-/* main footer */
 .pagination-item:hover {
   background-color: var(--cl-primary-hover);
 }

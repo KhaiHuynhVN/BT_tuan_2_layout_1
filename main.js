@@ -152,7 +152,7 @@ function dataRender() {
         <tr>
             <td class="p-16-24 fz-14 fw-500">${item.Date}</td>
             <td class="p-16-24 fz-14 fw-500">${item.Market}</td>
-            <td class="${item.Side === "Buy" ? "cl-quaternary" : "cl-tertiary"}">${item.Side}</td>
+            <td class="${item.Side === "Buy" ? "cl-quaternary" : "cl-tertiary"} p-16-24 fz-14 fw-500">${item.Side}</td>
             <td class="p-16-24 fz-14 fw-500">${item.Price}</td>
             <td class="p-16-24 fz-14 fw-500">${item.Amount}</td>
             <td class="p-16-24 fz-14 fw-500">${item.Value}</td>
@@ -170,7 +170,7 @@ function dataRender() {
                 ${
                    item.Status === "Open"
                       ? `
-                <button class="d-flex">
+                <button class="d-flex align-center lh-20">
                     <p class="cl-tertiary">Cancel</p>
                     <img class="ml-6" src="./assets/icons/cancel-icon.svg" alt="" />
                 </button>

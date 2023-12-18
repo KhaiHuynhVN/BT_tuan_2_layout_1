@@ -318,8 +318,16 @@ button {
    margin-top: 12px;
 }
 
+.cur-pointer {
+   cursor: pointer;
+}
+
 .primary-border {
    border: 2px solid var(--devider);
+}
+
+.secondary-border {
+   border: 1px solid var(--devider);
 }
 
 .w-full {
@@ -368,6 +376,10 @@ button {
 
 .d-inline-block {
    display: inline-block;
+}
+
+.lh-20 {
+   line-height: 20px;
 }
 
 .ml-6 {
